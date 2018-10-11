@@ -44,7 +44,7 @@ The following message format should be returned by PDP (Policy Decision Point) o
 Above JSON message is the key for feeding into KeyBiner EntitlementPack for Encoding and compressing.
 
 ````
-    entitlementsJson = EntitlementPack.encodeEntilementJson(s);
+    entitlementsJson = EntitlementPack.encodeEntitlementJson(s);
     compressed = Compression.compress(entitlementsJson);
 ````
 And it can be used to Uncompress/Decompress and Decode for complete entitlement again. We can use Keyabiner library to get an encoded and compressed String of the above JSON message. 
